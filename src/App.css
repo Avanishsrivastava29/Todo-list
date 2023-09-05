@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+ /* TodoApp.css */
+
+/* Container styles */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; /* Change background color to white */
+  border: 2px solid #8c7ae6; /* Add a border */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Define styles for the task input */
+.task-input {
+  display: flex;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #8c7ae6; /* Add a border */
+  border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-input button {
+  padding: 10px 20px;
+  background: #8c7ae6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background: #6a58b8;
+}
+
+/* Define styles for the task list */
+.task-list {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #ff6b6b, #8c7ae6);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.task-item button {
+  padding: 5px 10px;
+  background: #ff6b6b;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-item button:hover {
+  background: #ff5252;
 }
